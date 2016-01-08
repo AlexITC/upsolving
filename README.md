@@ -1,15 +1,18 @@
 # upsolving
 Upsolving is a project related to competitive programming, it allows to find what problems have you tried in some online judges like Codeforces or TJU
 
-To find what problems have you tried in Codeforces run the file 'codeforces_upsolving.rb':
+Requisites:
+- Ruby 2.2.3
+- Mechanize gem
 
- ruby codeforces_upsolving.rb
+To find what problems have you tried in Codeforces run the file 'codeforces_upsolving.rb':
+- ruby codeforces_upsolving.rb
 
 In case you got errors related to mechanize, try to install the gem using this command:
-
- gem install mechanize
+- gem install mechanize
 
 This is a sample output for my account:
+
 
 Logged in
 
