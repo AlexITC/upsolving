@@ -1,0 +1,25 @@
+
+// Apply the java plugin to add support for Java
+apply plugin: 'java'
+
+// In this section you declare where to find the dependencies of your project
+repositories {
+    jcenter()
+}
+
+// In this section you declare the dependencies for your production and test code
+dependencies {
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.2'
+}
+
+// Export options
+version = '1.0'
+jar {
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    manifest {
+        attributes 'Implementation-Title': 'Upsolving TJU',
+                   'Implementation-Version': version,
+                   'Main-Class': 'com.alex.upsolving.TJU',
+                   'Class-Path': configurations.compile.files.collect { it.name }.join(' ')
+    }
+}
