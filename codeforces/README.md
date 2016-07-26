@@ -1,5 +1,5 @@
-# upsolving
-Upsolving is a project related to competitive programming, it allows to find what problems have you tried in some online judges like Codeforces or TJU
+# Codeforces
+With this project you can see which problem you tried in codeforces.
 
 Requisites:
 - Ruby 2.2.3
