@@ -15,6 +15,7 @@
 #
 
 require 'mechanize'
+require 'json'
 
 # Main class
 class Upsolving
@@ -28,7 +29,7 @@ class Upsolving
     url = 'http://codeforces.com/enter'
     page = @agent.get(url)
     form = page.forms[1]
-    form['handle'] = user
+    form['handleOrEmail'] = user
     form['password'] = password
     page = form.submit
     fail('User or password is wrong, try again') if page.title == 'Login - Codeforces'
@@ -130,4 +131,3 @@ gym_unsolved.each do |problem|
   puts problem
 end
 puts "\n"
-
