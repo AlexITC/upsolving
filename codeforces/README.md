@@ -4,15 +4,15 @@ With this project you can see which problem you tried in codeforces.
 Requisites:
 - Ruby 2.2.3
 - Rubygems (https://rubygems.org/pages/download)
-- Nokogiri gem (gem install nokogiri)
-- Mechanize gem (gem install mechanize)
+- Nokogiri gem (`gem install nokogiri`)
+- Mechanize gem (`gem install mechanize`)
 
-To find what problems have you tried in Codeforces run the file 'codeforces_upsolving.rb':
-- ruby codeforces_upsolving.rb
+To find what problems have you tried in Codeforces run the file `codeforces_upsolving.rb`:
+- `ruby codeforces_upsolving.rb`
 
 This is a sample output for my account:
 
-
+```
 Logged in
 
 Contest data loaded
@@ -33,3 +33,4 @@ Looking for unsolved problems at gym, this may take some minutes, be patient
 * http://codeforces.com/gym/100268/problem/E
 * http://codeforces.com/gym/100268/problem/G
 * ...
+```
